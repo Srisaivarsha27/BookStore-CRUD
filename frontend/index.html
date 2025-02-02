@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bookstore CRUD</h1>
+    
+    <h2>All Books</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookTable"></tbody>
+    </table>
+
+    <h2>Add / Update Book</h2>
+    <div>
+        <input type="hidden" id="bookId">
+        <label>Name:</label> <input type="text" id="name">
+        <label>Rating:</label> <input type="text" id="rating">
+        <label>Price:</label> <input type="text" id="price">
+        <label>Image URL:</label> <input type="text" id="image">
+        <button id="saveBtn" onclick="addOrUpdateBook()">Save Book</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
